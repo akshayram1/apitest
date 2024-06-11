@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "6f61cdc3-3e7b-4b35-a8ed-c302ae312be1",
+		"name": "api test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19883928"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/notify",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"topicId\": \"example_topic\",\r\n  \"subscriberId\": \"example_subscriber\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/subscribe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"subscribe"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:5000/notify",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"topicId\": \"example_topic\",\r\n  \"subscriberId\": \"example_subscriber\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/subscribe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"subscribe"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.3 Python/3.11.5"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 11 Jun 2024 15:27:11 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "38"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Notifications sent\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:5000/unsubscribe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"topicId\": \"example_topic\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/notify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"notify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/subscribe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"topicId\": \"example_topic\",\r\n  \"subscriberId\": \"example_subscriber\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/subscribe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"subscribe"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
