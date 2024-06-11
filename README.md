@@ -15,8 +15,8 @@ This is a simple Publisher-Subscriber notification system implemented in Python 
 
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/yourusername/your-repo.git
-   cd your-repo
+   git clone https://github.com/akshayram1/apitest.git
+   cd apitest
 
 2. **Create a virtual environment**:
    ```sh
